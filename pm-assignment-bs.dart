@@ -1,3 +1,4 @@
+// menentukan harga per kg setiap kategori sampahnya
 double tentukanHargaKg(String kategori) {
   if (kategori == "plastik") {
     return 5000;
@@ -11,10 +12,12 @@ double tentukanHargaKg(String kategori) {
   return 0;
 }
 
+// perhitungan total setoran berdasarkan harga per kg dan jumlah berat sampah
 double hitungTotalSetoran(String kategori, double kg){
   return tentukanHargaKg(kategori) * kg;
 }
 
+// validasi business rule untuk penarikan saldo
 double tarikSaldo(double saldo, double nominalPenarikan) {
   if (nominalPenarikan < 10000) {
     print("penarikan saldo minimal 10000");
