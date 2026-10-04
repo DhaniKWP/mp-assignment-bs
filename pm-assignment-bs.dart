@@ -1,4 +1,4 @@
-double tentukanHarga(String kategori) {
+double tentukanHargaKg(String kategori) {
   if (kategori == "plastik") {
     return 5000;
   }
@@ -12,9 +12,9 @@ double tentukanHarga(String kategori) {
 }
 
 double hitungTotalSetoran(String kategori, double kg){
-  return tentukanHarga(kategori) * kg;
+  return tentukanHargaKg(kategori) * kg;
 }
 
 void main(){
-  print(hitungTotalSetoran("plastik",4));
+  print(hitungTotalSetoran("plastik",2));
 }
