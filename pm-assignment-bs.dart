@@ -16,5 +16,9 @@ double hitungTotalSetoran(String kategori, double kg){
 }
 
 void main(){
-  print(hitungTotalSetoran("plastik",2));
+  double saldo = 0;
+
+  saldo = saldo + hitungTotalSetoran("plastik", 6);
+
+  print(saldo);
 }
